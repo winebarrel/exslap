@@ -5,6 +5,7 @@ defmodule Exslap.Mixfile do
     [app: :exslap,
      version: "0.0.1",
      elixir: "~> 1.1",
+     escript: [main_module: Exslap],
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
